@@ -37,12 +37,15 @@ void quickSort(int array[], int low, int high) {
 
 int main() {
   int arr[100], n;
+  // scanning array 
   scanf("%d", &n);
   for(int i=0; i<n; i++) {
     scanf("%d", &arr[i]);
   }
+
   // sorting array 
   quickSort(arr, 0, n-1);
+  
   // printing array 
   for(int i=0; i<n; i++) {
     printf("%d ", arr[i]);
