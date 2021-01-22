@@ -6,6 +6,7 @@ int main() {
     for (int i=0; i<n; i++) {
         scanf("%d", &arr[i]);
     }
+    // sorting array 
     for (int i=0; i<n-1; i++) {
         int min_idx = i;
         for (int j=i+1; j<n; j++) {
@@ -17,6 +18,7 @@ int main() {
         arr[min_idx] = arr[i];
         arr[i] = temp;
     }
+    // printing array 
     for (int i=0; i<n; i++) {
         printf("%d ", arr[i]);
     }
