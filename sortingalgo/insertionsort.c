@@ -2,10 +2,13 @@
 
 int main() {
     int arr[100], n;
+
+    // scanning array 
     scanf("%d", &n);
     for (int i=0; i<n; i++) {
         scanf("%d", &arr[i]);
     }
+
     // sorting array
     for (int i=1; i<n; i++) {
         int key = arr[i];
@@ -17,6 +20,7 @@ int main() {
         }
         arr[j+1] = key;
     }
+    
     // printing sorted array 
     for (int i=0; i<n; i++) {
         printf("%d ", arr[i]);

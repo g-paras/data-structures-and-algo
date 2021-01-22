@@ -2,10 +2,13 @@
 
 int main() {
     int n, arr[100];
+
+    // scanning array
     scanf("%d", &n);
     for (int i=0; i<n; i++) {
         scanf("%d", &arr[i]);
     }
+
     // sorting array 
     for (int i=0; i<n-1; i++) {
         int min_idx = i;
@@ -18,7 +21,8 @@ int main() {
         arr[min_idx] = arr[i];
         arr[i] = temp;
     }
-    // printing array 
+
+    // printing sorted array 
     for (int i=0; i<n; i++) {
         printf("%d ", arr[i]);
     }

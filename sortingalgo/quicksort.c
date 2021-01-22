@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+/*------------ function to perform swapping: call by reference -------------*/
 void swap(int *a, int *b) {
   int t = *a;
   *a = *b;
   *b = t;
 }
 
-
+/*---------------- perform partition and return the integer ----------------*/
 int partition(int array[], int low, int high) {
   
   int pivot = array[high];
@@ -23,7 +24,7 @@ int partition(int array[], int low, int high) {
   return (i + 1);
 }
 
-
+/*-------------------------- perform quicksort -----------------------------*/
 void quickSort(int array[], int low, int high) {
   if (low < high) {
     
@@ -34,9 +35,10 @@ void quickSort(int array[], int low, int high) {
   }
 }
 
-
+/*----------------------------- main function ------------------------------*/
 int main() {
   int arr[100], n;
+
   // scanning array 
   scanf("%d", &n);
   for(int i=0; i<n; i++) {
@@ -46,7 +48,7 @@ int main() {
   // sorting array 
   quickSort(arr, 0, n-1);
   
-  // printing array 
+  // printing sorted array 
   for(int i=0; i<n; i++) {
     printf("%d ", arr[i]);
   }

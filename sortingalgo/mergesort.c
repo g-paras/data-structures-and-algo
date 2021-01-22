@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+
+/*--------------- function to perform merge operation -------------*/
 void merge(int arr[], int l, int mid, int r) {
     int n1 = mid-l+1;
     int n2 = r-mid;
@@ -39,6 +41,7 @@ void merge(int arr[], int l, int mid, int r) {
     }
 }
 
+/*-------------------- function to perform merge sort -----------------*/
 void mergeSort(int arr[], int l, int r) {
     if(l < r) {
         int mid = (l+r)/2;
@@ -49,15 +52,19 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
+/*--------------------------- main function ---------------------------*/
 void main() {
     int arr[100], n;
+
+    // scanning array
     scanf("%d", &n);
-    // scanning array 
     for (int i=0; i<n; i++) {
         scanf("%d", &arr[i]);
     }
-    // sorting array
+
+    // sorting array by calling mergesort function
     mergeSort(arr, 0, n-1);
+
     // printing sorted array
     for (int i=0; i<n; i++) {
         printf("%d ", arr[i]);
