@@ -60,7 +60,7 @@ void insertAtStart(struct node **head, int val) {
 }
 
 
-/*------------ function to insert a node after a given a node ------------------*/
+/*------------ function to insert a node after a given node --------------------*/
 void inserAfter(struct node **prev, int val) {
     if ((*prev) == NULL) {
         printf("Input node is null");
