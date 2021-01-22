@@ -1,12 +1,13 @@
 #include<stdio.h>
 
+/*------------------- function to swap the integers -------------*/
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-
+/*--------------- function to heapify the array ------------------*/
 void heapify(int arr[], int n, int i) {
     int largest = i;
     int left = 2*i+1;
@@ -24,7 +25,7 @@ void heapify(int arr[], int n, int i) {
 
 }
 
-
+/*-------------------- headSort function --------------------------*/
 void heapSort(int arr[], int n) {
     // build max heap 
     for (int i=n/2-1; i>=0; i--) 
@@ -38,9 +39,10 @@ void heapSort(int arr[], int n) {
     }
 }
 
-
+/*----------------------- main function ---------------------------*/
 int main() {
     int arr[100], n;
+
     // scanning array
     scanf("%d", &n);
     for (int i=0; i<n; i++) {
