@@ -3,6 +3,7 @@
 - Data Structures
 
   - Linked List
+  - Stack (array Implementation)
 
 - Sorting Algorithms
 
@@ -14,5 +15,6 @@
   - Heap Sort
 
 - Searching Algorithms
+
   - Linear Search
   - Binary Search
