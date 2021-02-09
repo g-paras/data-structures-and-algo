@@ -4,6 +4,8 @@
 
   - Linked List
   - Stack (array Implementation)
+  - Queue (LinkedList Implementatio)
+  - Tree (insertion and tree travesal)
 
 - Sorting Algorithms
 
